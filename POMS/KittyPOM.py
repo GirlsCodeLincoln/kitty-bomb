@@ -7,7 +7,8 @@ KittyPOM.py: .
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
-import logging
+import urllib.request
+import os
 
 __author__ = "Ben Weese"
 __copyright__ = "Copyright 2019, Kitten Bomb"
@@ -44,7 +45,6 @@ class PagePOM(object):
 
     def kitten_bomb(self):
         bomb = self.browser.find_elements(*self.kittens)
-        logging.info(len(bomb))
         # for picture in bomb:  # .click(picture) \
         i = 0
         while i < 10:
@@ -53,4 +53,14 @@ class PagePOM(object):
                 .click(bomb[i]) \
                 .key_up(Keys.SHIFT) \
                 .perform()
+            i += 1
+
+    def kitten_save(self):
+        path = os.getcwd()
+        bomb = self.browser.find_elements(*self.kittens)
+        # for picture in bomb:  # .click(picture) \
+        i = 0
+        while i < 10:
+            url = bomb[i].get_attribute("src")
+            urllib.request.urlretrieve(url, path + "/test-results/kittens/kitty-" + str(i) + ".jpg")
             i += 1

@@ -4,7 +4,7 @@
 test_kitten_bomb.py: Uses Selenium and Pytest to showcase testing automation.
 """
 
-import time
+
 
 from POMS.KittyPOM import PagePOM
 
@@ -30,4 +30,14 @@ def test_bomb(browser):
 	# comment this out
 	browser.quit()
 
+def test_save(browser):
+	"""
 
+	:param browser:
+	"""
+	page = PagePOM(browser)
+	page.load()
+	page.search_for('Fluffy Kittens')
+	page.kitten_save()
+	# comment this out
+	browser.quit()
