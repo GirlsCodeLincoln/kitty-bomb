@@ -21,6 +21,7 @@ jobs:
        brew install brew-cask-completion
        brew cask install google-chrome
        brew cleanup
+       google-chrome --version
        sudo pip3 install pipenv
        pipenv install --dev
     - name: Lint with flake8

@@ -40,9 +40,6 @@ class PagePOM(object):
         search_input.send_keys(phrase)
         search_input.submit()
 
-    def get_search_array(self):
-        return self.browser.find_element(*self.kittens)
-
     def kitten_bomb(self):
         bomb = self.browser.find_elements(*self.kittens)
         # for picture in bomb:  # .click(picture) \

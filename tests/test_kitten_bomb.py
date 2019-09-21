@@ -19,8 +19,11 @@ __status__ = "refactor"
 
 def test_bomb(browser):
 	"""
-	This fills out the First form on the page and makes sure the date was entered.
-	Then it will verify if the message was successfully sent.
+	Kitty Bomb uses an array of all the images labeled 'Image result for Fluffy Kittens' on the search page.
+	It then clicks each image and opens a new window. Bomb is the array of images and with the for loop it will go
+	through every item in the array and store the item in picture. It then uses an Action Chain which holds down
+	shift when you click the image. This makes sure the image will open in a new window. From there it opens 100
+	images of kittens in a new window.
 	:param browser:
 	"""
 	page = PagePOM(browser)
@@ -32,7 +35,8 @@ def test_bomb(browser):
 
 def test_save(browser):
 	"""
-
+	Kitty Save takes the working directory of the project and then it goes through the first 10 of the Bomb array
+	and saves them inside a folder in the directory.
 	:param browser:
 	"""
 	page = PagePOM(browser)
