@@ -17,7 +17,7 @@ __email__ = "ben@benweese.dev"
 __status__ = "refactor"
 
 
-def test_1(browser):
+def test_bomb(browser):
 	"""
 	This fills out the First form on the page and makes sure the date was entered.
 	Then it will verify if the message was successfully sent.
@@ -27,6 +27,7 @@ def test_1(browser):
 	page.load()
 	page.search_for('Fluffy Kittens')
 	page.kitten_bomb()
-	# browser.quit()
+	# comment this out
+	browser.quit()
 
 

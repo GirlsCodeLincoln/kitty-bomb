@@ -39,4 +39,4 @@ def browser():
 		driver = Chrome(executable_path=path + '/chromedriver', options=chrome_options)
 	driver.implicitly_wait(10)
 	yield driver
-	# driver.quit()
+	driver.quit()
