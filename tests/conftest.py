@@ -29,6 +29,7 @@ def browser():
 	chrome_options.add_argument("--disable-gpu")
 	chrome_options.add_argument("--window-size=1400x1200")
 	chrome_options.add_argument("--disable-extensions")
+	chrome_options.add_experimental_option("detach", True)
 
 	path = os.getcwd()
 	if path == "/home/circleci/project":
@@ -38,4 +39,4 @@ def browser():
 		driver = Chrome(executable_path=path + '/chromedriver', options=chrome_options)
 	driver.implicitly_wait(10)
 	yield driver
-	driver.quit()
+	# driver.quit()
