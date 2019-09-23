@@ -4,8 +4,6 @@ Kitty Bomb is a program that will:
 - B) search Google and save the thumb nails of the cat images into a folder.
 
 ## Badges
-[![CircleCI](https://circleci.com/gh/GirlsCodeLincoln/kitty-bomb/tree/master.svg?style=shield)](https://circleci.com/gh/GirlsCodeLincoln/kitty-bomb/tree/master) 
-
 ![GitHub](https://img.shields.io/github/license/GirlsCodeLincoln/kitty-bomb.svg) ![GitHub issues](https://img.shields.io/github/issues-raw/GirlsCodeLincoln/kitty-bomb.svg) [![StackShare](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/benweese/python-automation)
 
 ## Motivation
