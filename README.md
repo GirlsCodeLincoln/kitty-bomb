@@ -19,9 +19,6 @@ This was created for [Girls Code Lincoln](https://girlscodelincoln.com/) to teac
 <b>Continuous Integration</b>
 - [CircleCI](https://circleci.com/)
 
-<b>Dependency Maintenance </b>
-- [Dependabot by Github](https://dependabot.com/)
-
 <b>Downloads</b>
 - [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads)
 - [pip3](https://pip.pypa.io/en/stable/)
