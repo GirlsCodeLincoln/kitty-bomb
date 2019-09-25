@@ -22,7 +22,7 @@ This was created for [Girls Code Lincoln](https://girlscodelincoln.com/) to teac
 <b>Downloads</b>
 - [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads)
 - [pip3](https://pip.pypa.io/en/stable/)
-- [pipenv](https://docs.pipenv.org/en/latest/)
+- [pipenv](https://docs.pipenv.org/en/latest/) Make sure you run `pipenv install' on the repo after cloning.
 - [Python3](https://www.python.org/download/releases/3.0/)
 
 
@@ -33,7 +33,7 @@ With uses our Circle-CI runner using pipenv and pytest to run our automation scr
 [Google Image Search](https://images.google.com)
 
 ## Code Example
-<b>Kitty Bomb</b>
+<b>Kitty Bomb</b> Run with command line using `pipenv pytest -k 'kitten_bomb' `
 ```
 def kitten_bomb(self):
     bomb = self.browser.find_elements(*self.kittens)
@@ -44,7 +44,7 @@ def kitten_bomb(self):
             .key_up(Keys.SHIFT) \
             .perform()
 ```
-<b>Kitty Save</b>
+<b>Kitty Save</b> Run with command line using `pipenv pytest -k 'kitten_save' `
 ```
 def kitten_save(self):
     path = os.getcwd()
