@@ -9,6 +9,21 @@ Kitty Bomb is a program that will:
 ## Motivation
 This was created for [Girls Code Lincoln](https://girlscodelincoln.com/) to teach automation hopefully.
 
+## Running the Code
+Make sure you have Python 3 installed on your computer. 
+You will want to go to your directory in Terminal by using CD. 
+When you are in the directory for the project you will need to install pipenv. 
+You can do this by running the below in the directory.
+```
+pip3 install pipenv
+pipenv install
+```
+Next you can either run `pipenv shell` or put `pipenv` before your commands.
+
+To run every programming Kitty Bomb, and Kitty save you can run `pytest`
+
+To run a specific test you can use  `pytest -k test_bomb` or `pytest -k test_save`
+
 ## Tools
 <b>Built with</b>
 - [Pycharm Community](https://www.jetbrains.com/pycharm/)
@@ -22,7 +37,9 @@ This was created for [Girls Code Lincoln](https://girlscodelincoln.com/) to teac
 <b>Downloads</b>
 - [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads)
 - [pip3](https://pip.pypa.io/en/stable/)
-- [pipenv](https://docs.pipenv.org/en/latest/) Make sure you run `pipenv install' on the repo after cloning.
+- [pipenv](https://docs.pipenv.org/en/latest/) 
+    - Make sure you run `pipenv install` on the repo after cloning.
+    - pipenv is a virtual environment that can be used instead of a requirements.txt
 - [Python3](https://www.python.org/download/releases/3.0/)
 
 
