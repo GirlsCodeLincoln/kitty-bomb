@@ -23,6 +23,7 @@ __status__ = "refactor"
 def browser():
 	"""
 	Configures the chrome browser for use.
+	This is boiler plate makes sure we can use chrome.
 	"""
 	chrome_options = Options()
 	chrome_options.add_argument("--no-sandbox")
